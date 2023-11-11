@@ -1,0 +1,37 @@
+@import "../mixins";
+
+.header {
+  background-color: #fcf5ed;
+  .container {
+    .row {
+      justify-content: space-between;
+      text-transform: uppercase;
+      .navBar {
+        .logo {
+          img {
+            width: 64px;
+          }
+        }
+        .navList {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+          .navItem {
+            a {
+              @include primaryBtn();
+            }
+          }
+        }
+      }
+      .auth {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        a {
+          @include primaryBtn();
+        }
+      }
+    }
+  }
+}

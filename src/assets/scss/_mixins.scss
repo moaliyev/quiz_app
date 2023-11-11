@@ -1,0 +1,11 @@
+@mixin primaryBtn() {
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  color: #1f1717;
+  border-radius: 10px;
+  &:hover {
+    color: #ce5a67;
+    background-color: #ce5a6720;
+  }
+}

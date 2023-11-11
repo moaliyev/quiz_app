@@ -1,0 +1,59 @@
+.questions {
+  .container {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      .title {
+        font-size: 36px;
+        color: #1f1717;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .table {
+        width: 70%;
+        text-align: center;
+        border-collapse: collapse;
+
+        thead {
+          tr {
+            th {
+              font-size: 18px;
+              text-transform: uppercase;
+              color: #3c3c4399;
+            }
+          }
+        }
+        tbody {
+          tr {
+            color: #262626;
+            transition: all 0.3s ease;
+            &.striped {
+              background-color: rgb(247 248 250);
+            }
+            td {
+              padding: 10px 0;
+              a {
+                color: #262626;
+                transition: all 0.3s ease;
+                &:hover {
+                  color: #ce5a67;
+                }
+              }
+              &.easy {
+                color: rgb(0, 175, 155);
+              }
+              &.medium {
+                color: rgb(255, 184, 0);
+              }
+              &.hard {
+                color: rgb(255, 45, 85);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
